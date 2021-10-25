@@ -1,21 +1,18 @@
 "use strict";
 
-const todoList = document.querySelector('.list__object'),
-      buttonElem = document.querySelector('.block__button'),
-      list = document.querySelector('.list__object');
-
-let   blockInput = document.querySelector('.block__input'),
-      listItem = document.querySelector('.list__item');
-
-
-buttonElem.addEventListener('click', (pushTask) => {
-    createListItem(listItem);
-});
-
-function createListItem(item, i) {
-    item.innerHTML = "";
-        item.innerHTML +=
-            `<li class="list__item">lorem ipsum
-                            
-              </li>`
-}
+const input = document.querySelector('.form__input');
+const button = document.querySelector('.form__button');
+const list = document.querySelector('.form__list');
+const createNewListElement = () => {
+    button.addEventListener('click', (event) => {
+        if (input.value) {
+            const newItem = input.value
+            const listElement = document.createElement(`li`)
+            listElement.classList.add('form__item')
+            listElement.textContent = newItem
+            document.querySelector('.form__list').append(listElement)
+            input.value = ''
+        }
+    }
+)};
+createNewListElement();

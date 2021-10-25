@@ -4,57 +4,59 @@
 
 .page-main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
+
+.main__title {
+    margin-bottom: 20px;
+}
+
 .page-main__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.page-main__block {
+
+.main__form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.block__title {
-    margin-bottom: 16px;
-}
-.block__object {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 16px;
-}
-.block__button {
-    background-color: #cccccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 26px;
-    width: 140px;
-    margin-bottom: 16px;
-    text-align: center;
-    border-style: none;
-    cursor: pointer;
 
-}
-.block__button:hover {
-    transform: scale(1.05);
-}
-.block__input {
+.form__button {
+    width: 140px;
+    height: 30px;
     box-sizing: border-box;
-    border-style: solid;
-    border-width: 2px;
-    padding: 6px 6px 6px;
+    border-style: none;
+    background-color: #cccccc;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.11s ease;
 }
-.block__list {
-    display: flex;
-    margin-left: -70px;
+
+.form__button:hover {
+    transform: scale(1.04);
 }
-.list__object {
+
+.form__input {
+    margin-bottom: 20px;
+}
+
+.form__list {
+    border-radius: 10px;
+    border: solid 1px black;
+}
+
+.form__list__object{
     padding: 0;
 }
-.list__item {
+
+.form__item {
+    padding-right: 32px;
+    padding-left: 32px;
     list-style: none;
 }
