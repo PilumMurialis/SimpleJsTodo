@@ -49,6 +49,7 @@
 .form__list {
     border-radius: 10px;
     border: solid 1px black;
+    visibility: hidden;
 }
 
 .form__list__object{

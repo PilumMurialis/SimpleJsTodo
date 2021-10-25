@@ -8,6 +8,7 @@ const createNewListElement = () => {
         if (input.value) {
             const newItem = input.value
             const listElement = document.createElement(`li`)
+            list.style.visibility = 'visible'
             listElement.classList.add('form__item')
             listElement.textContent = newItem
             document.querySelector('.form__list').append(listElement)
